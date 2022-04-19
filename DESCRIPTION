@@ -1,0 +1,13 @@
+Package: CompPsych
+Type: Package
+Title: Computational psychiatry
+Version: 0.1.0
+Author: Artur Shvetcov
+Maintainer: Artur Shvetcov <a.shvetcov@unsw.edu.au>
+Description: Wrangling data generated through psychiatry.app. Contains a bundle of functions that facilitate processing of raw data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.6)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
