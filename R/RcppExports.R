@@ -10,3 +10,12 @@ get_total_time <- function(tab) {
     .Call(`_CompPsych_get_total_time`, tab)
 }
 
+#' @title Versions of the game in the batch
+#' @param tab  dataframe with two columns "PIN" and "Version"
+#' @description function extracts all versions of the game that appeared in the current batch
+#' @return returns dataframe with two columns: "PIN" and "version". "PIN" is ids of participants, "Version" is version of the game
+#' @export
+get_total_versions <- function(tab) {
+    .Call(`_CompPsych_get_total_versions`, tab)
+}
+

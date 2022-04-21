@@ -16,9 +16,21 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// get_total_versions
+DataFrame get_total_versions(DataFrame tab);
+RcppExport SEXP _CompPsych_get_total_versions(SEXP tabSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< DataFrame >::type tab(tabSEXP);
+    rcpp_result_gen = Rcpp::wrap(get_total_versions(tab));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_CompPsych_get_total_time", (DL_FUNC) &_CompPsych_get_total_time, 1},
+    {"_CompPsych_get_total_versions", (DL_FUNC) &_CompPsych_get_total_versions, 1},
     {NULL, NULL, 0}
 };
 
